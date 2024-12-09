@@ -83,3 +83,44 @@
 .btn-danger:hover {
     background-color: #a30000;
 }
+
+.cart-button {
+    position: relative;
+}
+
+.dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#cart-items p {
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #D40000;
+}
+
+.btn-primary:hover {
+    background-color: #a30000;
+}
+
+.product-info h4 {
+    word-wrap: break-word;  /* Quebra a palavra quando necessário */
+    white-space: normal;    /* Permite que o texto quebre em várias linhas */
+}
+
+/* Ajustar a altura das imagens nos cartões para que elas não sejam cortadas */
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: contain; /* A imagem será redimensionada para caber sem cortar */
+}
+
+.map-container iframe {
+    width: 100%;  /* Ajusta a largura do mapa para ocupar toda a largura do container */
+    height: 450px;  /* Define uma altura fixa para o mapa */
+    border: 0;  /* Remove a borda do iframe */
+    border-radius: 10px;  /* Opcional: dá um efeito arredondado às bordas do mapa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Opcional: adiciona sombra para dar destaque */
+}

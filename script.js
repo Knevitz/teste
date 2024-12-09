@@ -22,3 +22,22 @@ dropdownItems.forEach(item => {
 $(document).ready(function () {
     $('#cnpj').inputmask("99.999.999/9999-99", { placeholder: " " });
 });
+
+
+const cartItemsContainer = document.getElementById("cart-items");
+const cartCount = document.getElementById("cart-count");
+
+// Atualiza o dropdown do carrinho
+function updateCart() {
+    if (cartItems.length === 0) {
+        cartItemsContainer.innerHTML = '<p class="text-muted">O carrinho está vazio.</p>';
+    } else {
+        cartItemsContainer.innerHTML = cartItems
+            .map(item => `<p>${item.name} - <strong>${item.price}</strong></p>`)
+            .join("");
+        cartCount.textContent = cartItems.length;
+    }
+}
+
+// Inicializa o carrinho
+updateCart();
