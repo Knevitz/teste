@@ -61,3 +61,25 @@
     background-color: #ffffff; 
     color: #D40000; 
 }
+
+.bg-primary {
+    background-color: #D40000 !important; /* Cor de fundo consistente com o restante do site */
+}
+
+.form-control {
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.btn-danger {
+    background-color: #D40000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #a30000;
+}
